@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,15 +20,24 @@
     <div class="container">
       <div class="header"><h5>Stopwatch By Shin Thant Kyaw</h5></div>
       <div class="stopwatchContainer">
-        <div class="stopwatch minute">00</div>
+        <div class="stopwatch minute">
+          <div>00</div>
+          <div class="unit minuteText">Minutes</div>
+        </div>
         <div class="stopwatch space">:</div>
-        <div class="stopwatch second">00</div>
+        <div class="stopwatch second">
+          <div>00</div>
+          <div class="unit secondText">seconds</div>
+        </div>
         <div class="stopwatch space">:</div>
-        <div class="stopwatch centisecond">00</div>
+        <div class="stopwatch centisecond">
+          <div>00</div>
+          <div class="unit centisecondText">Centiseconds</div>
+        </div>
       </div>
       <div class="buttonContainer">
-        <button type="button" class="btn btn-info button button1">Start</button>
-        <button type="button" class="btn btn-info button button2">Reset</button>
+        <button type="button" class="btn button button1">Start</button>
+        <button type="button" class="btn button button2">Reset</button>
       </div>
     </div>
     <script src="script.js"></script>
