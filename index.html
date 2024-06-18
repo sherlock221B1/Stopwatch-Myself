@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,18 +21,27 @@
     <div class="container">
       <div class="header"><h5>Stopwatch By Shin Thant Kyaw</h5></div>
       <div class="stopwatchContainer">
-        <div class="stopwatch minute">
-          <div>00</div>
-          <div class="unit minuteText">Minutes</div>
+        <!-- Minute -->
+        <div class="stopwatch minuteContainer">
+          <div class="time minute">00</div>
+          <div class="unit">Minutes</div>
         </div>
+
+        <!-- : -->
         <div class="stopwatch space">:</div>
-        <div class="stopwatch second">
-          <div>00</div>
-          <div class="unit secondText">seconds</div>
+
+        <!-- Second -->
+        <div class="stopwatch secondContainer">
+          <div class="time second">00</div>
+          <div class="unit">seconds</div>
         </div>
+
+        <!-- : -->
         <div class="stopwatch space">:</div>
-        <div class="stopwatch centisecond">
-          <div>00</div>
+
+        <!-- centisecond -->
+        <div class="stopwatch centisecondContainer">
+          <div class="time centisecond">00</div>
           <div class="unit centisecondText">Centiseconds</div>
         </div>
       </div>

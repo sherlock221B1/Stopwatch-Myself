@@ -1,4 +1,94 @@
-body { 
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 90%;
+  width: 90%;
+  background-color: #2d1338;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  color: white;
+  font-family: "GT Haptik Medium", sans-serif;
+}
+.stopwatchContainer {
+  color: white;
+  display: flex; /* layout for stopwatch container*/
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: "Noto Sans JP", sans-serif; /* use google font*/
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  font-size: 17vw; /* make 00:00:00 larger */
+
+  position: relative; /* move to upper place  */
+  bottom: 30px;
+}
+.stopwatch {
+  margin: 0px 10px;
+}
+.space {
+  font-weight: 400;
+  position: relative;
+  bottom: 37px;
+}
+.unit {
+  font-size: 1.8vw;
+  text-align: right;
+  position: relative;
+  bottom: 60px;
+  right: 40px;
+}
+.buttonContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.button {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  width: 19%;
+  border-radius: 35px;
+  padding: 0.8vw;
+  margin: 0px 25px;
+}
+.button1 {
+  background-color: #e57cd8;
+}
+.button1:hover {
+  background-color: #574261;
+  color: white;
+}
+.button2 {
+  background-color: #574261;
+}
+.button2:hover {
+  background-color: #fce5d8;
+  color: #e57cd8;
+}
+
+@media (max-height: 535px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-color: #2d1338;
+  }
+}
+
+/*
+body {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -22,30 +112,26 @@ body {
   padding: 0;
   color: white;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   font-family: "Noto Sans JP", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 17vw;
-  position: relative;
-  bottom: 30px;
+  font-size: 13rem;
 }
 .stopwatch {
   margin: 0px 10px;
 }
+.time {
+  padding: 0 !important;
+  height: 100px;
+}
 .space {
   font-weight: 400;
-  position: relative;
-  bottom: 2.8vh;
 }
-.unit{
+.unit {
   font-size: 1.8vw;
   text-align: right;
-  position: relative;
-  bottom: 60px;
-  right: 40px;
 }
 .buttonContainer {
   width: 100%;
@@ -62,19 +148,19 @@ body {
   padding: 0.8vw;
   margin: 0px 25px;
 }
-.button1{
-  background-color: #E57CD8;
+.button1 {
+  background-color: #e57cd8;
 }
-.button1:hover{
+.button1:hover {
   background-color: #574261;
   color: white;
 }
-.button2{
+.button2 {
   background-color: #574261;
 }
-.button2:hover{
-  background-color: #FCE5D8;
-  color: #E57CD8;
+.button2:hover {
+  background-color: #fce5d8;
+  color: #e57cd8;
 }
 
 @media (max-height: 535px) {
@@ -84,3 +170,4 @@ body {
     background-color: #2d1338;
   }
 }
+ */
